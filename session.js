@@ -23,25 +23,21 @@ let b={
 }
 console.log(JSON.stringify(b))
 
-const asyncPostCall = async () => {
-            try {
-                const response = await fetch(url, {
-                 method: 'POST',
-                 headers: {
-                   'Content-Type': 'application/json'
-                   },
-                   body: JSON.stringify(b)
-                 });
-                 const data = await response.json();
-              // enter you logic when the fetch is successful
-                 console.log(data);
-               } catch(error) {
-             document.getElementById("error").innerText=error;
+fetch(url,{
+    method: "POST",
+    // Adding body or contents to send
+    body: JSON.stringify(b),
+    // Adding headers to the request
 
-                  console.log(error)
-                 } 
-            }
-function display() {
-    asyncPostCall()
-}
+    headers: {
 
+        "Content-type": "application/json; charset=UTF-8"
+
+    }
+})
+ 
+// Converting to JSON
+.then(response => response.json())
+ 
+// Displaying results to console
+.then(json => document.getElementById("error").innerText=json);
