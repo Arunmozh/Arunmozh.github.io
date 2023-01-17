@@ -12,7 +12,7 @@ return response.json(); })
   .then((text) =>
       document.getElementById("result").innerText=text.name)
   
-  .catch((error) =>       document.getElementById("error").innerText=error
+  .catch((error) =>       document.getElementById("result").innerText=error
      )
       
       
