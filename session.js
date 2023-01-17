@@ -1,4 +1,4 @@
-let url="http:/"+"/localhost:8080/test.json";
+let url="https:/"+"/test.json";
 let data;
 fetch(url)
 
