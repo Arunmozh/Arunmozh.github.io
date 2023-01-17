@@ -30,11 +30,7 @@ const asyncPostCall = async () => {
                  headers: {
                    'Content-Type': 'application/json'
                    },
-                   body: JSON.stringify({
-             // your expected POST request payload goes here
-                     title: "My post title",
-                     body: "My post content."
-                    })
+                   body: JSON.stringify(b)
                  });
                  const data = await response.json();
               // enter you logic when the fetch is successful
