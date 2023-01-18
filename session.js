@@ -19,7 +19,7 @@ return response.json(); })
       
 console.log(url)
 let b={
-    a:1
+    name:"mozhi"
 }
 console.log(JSON.stringify(b))
 
