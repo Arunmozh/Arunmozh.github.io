@@ -22,7 +22,7 @@ let b={
     name:"mozhi"
 }
 console.log(JSON.stringify(b))
-
+function clic(){
 fetch(url,{
     method: "POST",
     // Adding body or contents to send
@@ -41,3 +41,4 @@ fetch(url,{
  
 // Displaying results to console
 .then(json => document.getElementById("error").innerText=json.name);
+}
