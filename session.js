@@ -40,4 +40,4 @@ fetch(url,{
 .then(response => response.json())
  
 // Displaying results to console
-.then(json => document.getElementById("error").innerText=json);
+.then(json => document.getElementById("error").innerText=json.name);
