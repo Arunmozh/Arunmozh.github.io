@@ -1,4 +1,4 @@
-let url="http:/"+"/localhost:8080/Testing%20/test.json";
+let url="test.json";
 let data;
 fetch(url)
 
@@ -28,7 +28,7 @@ function saveToFirebase(email) {
         });
 }
 
-saveToFirebase(email);
+saveToFirebase("arun");
 
 
 
